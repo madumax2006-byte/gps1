@@ -1,6 +1,6 @@
 <!DOCTYPE html><html lang="en"><head>
-    <title>AIvent - AI Event, Conference and Meetup Website Template</title>
-    <link rel="icon" href="images/icon.webp" type="image/gif" sizes="16x16">
+    <title>Galewela Pradeshiya Sabha - ගලේවෙල ප්‍රාදේශිය සභාව</title>
+    <link rel="icon" href="images/GPS @.png" type="image/gif" sizes="16x16">
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta content="AIvent" name="description">
@@ -38,9 +38,9 @@
                                 <!-- logo begin -->
                                 <div id="logo">
                                     <a href="index.html">
-                                        <img class="logo-main" src="/images/logo.webp" alt="">
-                                        <img class="logo-scroll" src="/images/logo.webp" alt="">
-                                        <img class="logo-mobile" src="/images/logo.webp" alt="">
+                                        <img class="logo-main" src="/images/GPS @.png" alt="">
+                                        <img class="logo-scroll" src="/images/GPS @.png" alt="">
+                                        <img class="logo-mobile" src="/images/GPS @.png" alt="">
                                     </a>
                                 </div>
                                 <!-- logo close -->
@@ -421,107 +421,359 @@
 
           </div>
         </section>
+<style>
+            /* Contact Section */
+        .contact {
+            padding: 100px 5%;
+            animation: fadeUp 1s ease;
+        }
 
-        <section id="section-faq" class="bg-dark section-dark text-light">
-            <div class="container">
-                <div class="row g-4">
-                    <div class="col-lg-5">
-                        <div class="subtitle wow fadeInUp" data-wow-delay=".0s">Everything You Need to Know</div>
-                        <h2 class="wow fadeInUp" data-wow-delay=".2s">Frequently Asked Questions</h2>
-                    </div>
+        .contact-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 40px;
+        }
 
-                    <div class="col-lg-7">
-                        <div class="accordion s2 wow fadeInUp">
-                            <div class="accordion-section">
-                                <div class="accordion-section-title" data-tab="#accordion-a1">
-                                    What is the AI Summit 2025?
-                                </div>
-                                <div class="accordion-section-content" id="accordion-a1">
-                                    The AI Summit 2025 is a premier event gathering leading AI experts, thought leaders, and innovators. It features keynotes, workshops, panels, and networking opportunities focusing on the latest advancements in artificial intelligence.
-                                </div>
+        .map {
+            flex: 1;
+            min-width: 300px;
+            height: 400px;
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+        }
 
-                                <div class="accordion-section-title" data-tab="#accordion-a2">
-                                    When and where will the event be held?
-                                </div>
-                                <div class="accordion-section-content" id="accordion-a2">
-                                    The AI Summit 2025 will take place from **[Event Dates]** at **[Event Location]**. More details about the venue and directions will be provided closer to the event.
-                                </div>
+        .map iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
 
-                                <div class="accordion-section-title" data-tab="#accordion-a3">
-                                    How can I register for the event?
-                                </div>
-                                <div class="accordion-section-content" id="accordion-a3">
-                                    You can register for the AI Summit 2025 through our official website. Simply choose your ticket type and fill out the registration form.
-                                </div>
+        .contact-form {
+            flex: 1;
+            min-width: 300px;
+            padding: 30px;
+            border-radius: 20px;
+        }
 
-                                <div class="accordion-section-title" data-tab="#accordion-a4">
-                                    What ticket options are available?
-                                </div>
-                                <div class="accordion-section-content" id="accordion-a4">
-                                    We offer a range of ticket options, including Standard, VIP, Full Access Pass, Student, and Virtual tickets. You can find more details about each ticket type on our [Tickets Page](#).
-                                </div>
+        .form-group {
+            margin-bottom: 20px;
+        }
 
-                                <div class="accordion-section-title" data-tab="#accordion-a5">
-                                    Can I transfer my ticket to someone else?
-                                </div>
-                                <div class="accordion-section-content" id="accordion-a5">
-                                    Tickets are non-transferable. If you are unable to attend, please contact our support team for assistance.
-                                </div>
+        .form-group label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: 500;
+        }
 
-                                <div class="accordion-section-title" data-tab="#accordion-a6">
-                                    Will there be virtual participation?
-                                </div>
-                                <div class="accordion-section-content" id="accordion-a6">
-                                    Yes! For those who can’t attend in person, we offer a **Virtual Ticket**. This provides access to live-streamed sessions, workshops, and networking opportunities online.
-                                </div>
-                            </div>
-                        </div>                        
-                    </div>
-                </div>
+        .form-group input,
+        .form-group select,
+        .form-group textarea {
+            width: 100%;
+            padding: 12px 15px;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            background: var(--glass-bg);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            color: inherit;
+            transition: var(--transition);
+        }
+
+        .form-group input:focus,
+        .form-group select:focus,
+        .form-group textarea:focus {
+            outline: none;
+            border-color: var(--primary-color);
+            box-shadow: 0 0 0 2px rgba(59, 130, 246, 0.3);
+        }
+
+      .google-form-link {
+            display: block;
+            text-align: center;
+            color: #c5084a;
+            margin-top: 20px;
+            color: var(--primary-color);
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        .google-form-link:hover {
+            text-decoration: underline;
+        }
+        .btn {
+            display: inline-block;
+            padding: 12px 30px;
+            background: var(--primary-color);
+            color: white;
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: 500;
+            transition: var(--transition);
+            border: none;
+            cursor: pointer;
+        }
+
+        .btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+        }
+</style>
+           <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="section-title">
+            <h2>Contact Us</h2>
+        </div>
+        
+        <div class="contact-container">
+            <div class="map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d126325.385399366!2d80.58901136759207!3d7.841689408414212!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3afca4ce2278a895%3A0x919c10dab5ef1c1c!2sGalewela!5e0!3m2!1sen!2slk!4v1686742584082!5m2!1sen!2slk" allowfullscreen="" loading="lazy"></iframe>
             </div>
-        </section>
-
-
-    <!-- footer begin -->
-    <footer class="text-light section-dark">
-        <div class="container">
-            <div class="row g-4 align-items-center">
-                <div class="col-md-12">
-                    <div class="d-lg-flex align-items-center justify-content-between text-center">
-                        <div>
-                            <h3 class="fs-20">Address</h3>
-                            121 AI Blvd, San Francisco<br>
-                            BCA 94107
-                        </div>
-                        <div>
-                            <img src="images/logo.webp" class="w-150px" alt=""><br>
-                            <div class="social-icons mb-sm-30 mt-4">
-                                <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
-                                <a href="#"><i class="fa-brands fa-instagram"></i></a>
-                                <a href="#"><i class="fa-brands fa-twitter"></i></a>
-                                <a href="#"><i class="fa-brands fa-youtube"></i></a>
-                            </div>
-
-                        </div>
-                        <div>
-                            <h3 class="fs-20">Contact Us</h3>
-                            T. +1 123 456 789<br>
-                            M. contact@aivent.com
-                        </div>
+            
+            <div class="contact-form glass">
+                <h3>Send us a Message</h3>
+                <form id="contactForm">
+                    <div class="form-group">
+                        <label for="name">Your Name</label>
+                        <input type="text" id="name" placeholder="Enter your name" required>
                     </div>
-                </div>                    
+                    <div class="form-group">
+                        <label for="email">Email Address</label>
+                        <input type="email" id="email" placeholder="Enter your email" required>
+                    </div>
+              
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" rows="5" placeholder="Type your message here" required></textarea>
+                    </div>
+                    <button type="submit" class="btn">Send Message</button>
+                </form>
+                
+                <a href="https://forms.gle/9PkmVCLi9Ph27pSR9" target="_blank" class="google-form-link">
+                    Or fill out our Google Form instead
+                </a>
             </div>
         </div>
-        <div class="subfooter">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-12 text-center">
-                        Copyright 2025 - AIvent by Designesia
-                    </div>
+    </section>
+    <script>
+         // Contact Form WhatsApp Integration
+        const contactForm = document.getElementById('contactForm');
+        const notification = document.getElementById('notification');
+        
+        contactForm.addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
+         
+            const message = document.getElementById('message').value;
+            
+            // Format the message for WhatsApp
+            const whatsappMessage = `Name: ${name}%0AEmail: ${email}%0AMessage: ${message}`;
+            
+            // Create WhatsApp URL
+            const whatsappURL = `https://wa.me/94719552053?text=${whatsappMessage}`;
+            
+            // Open WhatsApp in a new tab
+            window.open(whatsappURL, '_blank');
+            
+            // Show success notification
+            notification.classList.add('show');
+            
+            // Reset form
+            contactForm.reset();
+            
+            // Hide notification after 3 seconds
+            setTimeout(() => {
+                notification.classList.remove('show');
+            }, 3000);
+        });
+    </script>
+<style>
+            /* Footer */
+        footer {
+            background: var(--primary-color);
+            color: white;
+            padding: 50px 5% 20px;
+            border-top: 5px solid rgba(255, 255, 255, 0.2);
+            position: relative;
+        }
+
+        .footer-border {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 5px;
+            background: linear-gradient(90deg, #ff6b6b, #c5084a, #3b82f6);
+        }
+
+        .footer-content {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 40px;
+            margin-bottom: 30px;
+        }
+
+        .footer-logo {
+            flex: 1;
+            min-width: 250px;
+        }
+
+        .footer-logo .logo-circle {
+            margin-bottom: 15px;
+        }
+
+        .footer-links {
+            flex: 1;
+            min-width: 150px;
+        }
+
+        .footer-links h4 {
+            font-size: 1.2rem;
+            margin-bottom: 20px;
+            position: relative;
+            display: inline-block;
+        }
+
+        .footer-links h4:after {
+            content: '';
+            position: absolute;
+            width: 50%;
+            height: 2px;
+            background: white;
+            bottom: -8px;
+            left: 0;
+        }
+
+        .footer-links ul {
+            list-style: none;
+        }
+
+        .footer-links li {
+            margin-bottom: 10px;
+            display: flex;
+            align-items: center;
+        }
+
+        .footer-links i {
+            margin-right: 10px;
+            width: 20px;
+            text-align: center;
+        }
+
+        .footer-links a {
+            color: white;
+            text-decoration: none;
+            transition: var(--transition);
+        }
+
+        .footer-links a:hover {
+            padding-left: 5px;
+        }
+
+        .social-icons {
+            display: flex;
+            gap: 15px;
+            margin-top: 20px;
+        }
+
+        .social-icons a {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 40px;
+            height: 40px;
+            border-radius: 100%;
+            background: rgba(255, 255, 255, 0.1);
+            color: white;
+            text-decoration: none;
+            transition: var(--transition);
+        }
+
+        .social-icons a:hover {
+            background: black;
+            color: var(--primary-color);
+            transform: translateY(-3px);
+        }
+
+        .copyright {
+            text-align: center;
+            padding-top: 20px;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .current-time {
+            text-align: center;
+            margin-top: 10px;
+            font-size: 0.9rem;
+            opacity: 0.8;
+        }
+</style>
+    <!-- Footer -->
+    <footer>
+        <div class="footer-border"></div>
+        <div class="footer-content">
+            <div class="footer-logo">
+                <div class="logo-circle">GP</div>
+                <p>Galewela Pradeshiya Sabha is committed to serving the community with dedication and excellence.</p>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#"><i class="fab fa-whatsapp"></i></a>
                 </div>
             </div>
+            
+            <div class="footer-links">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="#home"><i class="fas fa-home"></i> Home</a></li>
+                    <li><a href="#about"><i class="fas fa-info-circle"></i> About Us</a></li>
+                    <li><a href="#gallery"><i class="fas fa-images"></i> Gallery</a></li>
+                    <li><a href="#contact"><i class="fas fa-phone"></i> Contact Us</a></li>
+                </ul>
+            </div>
+            
+
+            
+            <div class="footer-links">
+                <h4>Contact Info</h4>
+                <ul>
+                    <li><i class="fas fa-map-marker-alt"></i> Main Street, Galewela</li>
+                    <li><i class="fas fa-phone"></i> +94 25 123 4567</li>
+                    <li><i class="fas fa-envelope"></i> info@galewelaps.lk</li>
+                    <li><i class="fas fa-clock"></i> Mon-Fri: 8:30 AM - 4:30 PM</li>
+                </ul>
+            </div>
         </div>
+        
+        <div class="copyright">
+            <p>&copy; 2023 Galewela Pradeshiya Sabha. All Rights Reserved. | Developed by Enp Media Unit</p>
+        </div>
+        
+        
     </footer>
+    <script>
+         // Current Time Display
+        function updateTime() {
+            const now = new Date();
+            const options = { 
+                weekday: 'long', 
+                year: 'numeric', 
+                month: 'long', 
+                day: 'numeric',
+                hour: '2-digit',
+                minute: '2-digit',
+                second: '2-digit'
+            };
+            const timeString = now.toLocaleDateString('en-US', options);
+            document.getElementById('time').textContent = timeString;
+        }
+    </script>
+
     <!-- footer end -->
     <div id="buy-now" class="show-on-scroll">
          </div>

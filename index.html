@@ -136,6 +136,7 @@
             opacity: 0.8;
         }
 </style>
+
 <style>
             /* Contact Section */
         .contact {
@@ -302,7 +303,80 @@
     to { opacity: 1; transform: translateY(0); }
   }
 </style>
+<style>
+    /* Logo Slideshow Section */
+.clients {
+    background: linear-gradient(135deg, rgba(138, 43, 226, 0.15) 0%, rgba(106, 13, 173, 0.1) 100%);
+    color: white;
+    text-align: center;
+    padding: 60px 0;
+}
 
+.clients .section-title {
+    color: var(--primary-light);
+}
+
+.slider-container {
+    position: relative;
+    max-width: 1000px;
+    margin: 0 auto;
+    overflow: hidden;
+    height: 180px;
+    padding: 15px 0;
+}
+
+.logo-slide {
+    display: flex;
+    animation: slide 30s linear infinite;
+    padding: 0 20px;
+}
+
+.logo-item {
+    flex: 0 0 auto;
+    width: 200px;
+    height: 150px;
+    margin: 0 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--card-bg);
+    border-radius: 12px;
+    padding: 10px;
+    transition: all 0.3s ease;
+    backdrop-filter: blur(5px);
+    border: 1px solid rgba(147, 112, 219, 0.2);
+}
+
+.logo-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(138, 43, 226, 0.3);
+    border-color: var(--primary);
+}
+
+.logo-img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;  /* image container eke fully fit wenna */
+    filter: none;         /* original color preserve karanna */
+    transition: transform 0.3s ease;
+}
+
+.logo-item:hover .logo-img {
+    transform: scale(1.1); /* hover wenama thoda enlarge wenna */
+}
+
+@keyframes slide {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-100%); }
+}
+
+/* Responsive */
+@media screen and (max-width: 768px) {
+    .slider-container { height: 120px; }
+    .logo-item { width: 120px; height: 90px; margin: 0 10px; }
+}
+
+ </style>
 
 <body class="dark-scheme">
 
@@ -337,13 +411,11 @@
                             <div class="de-flex-col">
                                 <div class="de-flex-col header-col-mid">
                                     <ul id="mainmenu">
-                                        <li><a class="menu-item" href="#section-hero">Home</a>
-                                          
-                                        </li>
-                                        <li><a class="menu-item" href="#section-about">About</a></li>
+                                        <li><a class="menu-item" href="#section-hero"> Home</a></li>
+                                        <li><a class="menu-item" href="#section-about"> About</a></li>
                                         <li><a class="menu-item" href="#section-why-attend"> Week Category</a></li>
-                                        <li><a class="menu-item" href="#section-venue"></a></li>
-                                        <li><a class="menu-item" href="#section-faq">FAQ</a></li>
+                                        <li><a class="menu-item" href="#clients"> Themes</a></li>
+                                        <li><a class="menu-item" href="#contact"> Contact Us</a></li>
                                         </li>
                                     </ul>
                                 </div>
@@ -391,8 +463,8 @@
 
                     <div class="spacer-single"></div>
 
-                    <a class="btn-main mx-2 fx-slide" href="xxxxxx"><span>Contact Us</span></a>
-                    <a class="btn-main btn-line mx-2 fx-slide" href="section-why-attend"><span>View Days</span></a>
+                    <a class="btn-main mx-2 fx-slide" href="#contact"><span>Contact Us</span></a>
+                    <a class="btn-main btn-line mx-2 fx-slide" href="#section-why-attend"><span>View Days</span></a>
                 </div>
             </div>
         </div>
@@ -653,9 +725,39 @@
     </div>
   </div>
 </section>
-
-
-    
+ 
+    <!-- Logo Slideshow Section -->
+    <section id="clients" class="clients">
+        <div class="container">
+            <h2 class="section-title">තේමා පාඨයන්</h2>
+            <div class="slider-container">
+                <div class="logo-slide">
+                    <div class="logo-item">
+                        <img src="/images/ll2.png" alt="TechCorp" class="logo-img">
+                    </div>
+                    <div class="logo-item">
+                        <img src="/images/ll22.png" alt="WebSolutions" class="logo-img">
+                    </div>
+                    <div class="logo-item">
+                        <img src="/images/ll33.png" alt="DataSystems" class="logo-img">
+                    </div>
+                    <div class="logo-item">
+                        <img src="/images/ll44.png" alt="CloudTech" class="logo-img">
+                    </div>
+                    <div class="logo-item">
+                        <img src="/images/soon.jpg" alt="NextGen" class="logo-img">
+                    </div>
+                    <div class="logo-item">
+                        <img src="/images/soon.jpg" alt="DigitalX" class="logo-img">
+                    </div>
+                    <div class="logo-item">
+                        <img src="/images/soon.jpg" alt="DigitalX" class="logo-img">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+   
         <section class="bg-dark section-dark text-light pt-80 relative jarallax" aria-label="section">
             <img src="images/background/2.webp" class="jarallax-img" alt="">
             <div class="gradient-edge-top"></div>
@@ -803,8 +905,8 @@
                 <h4>Quick Links</h4>
                 <ul>
                     <li><a href="#home"><i class="fas fa-home"></i> Home</a></li>
-                    <li><a href="#about"><i class="fas fa-info-circle"></i> About Us</a></li>
-                    <li><a href="#gallery"><i class="fas fa-images"></i>ඒක් </a></li>
+                    <li><a href="#section-about"><i class="fas fa-info-circle"></i> About Us</a></li>
+                    <li><a href="#section-why-attend"><i class="fas fa-images"></i> Days </a></li>
                     <li><a href="#contact"><i class="fas fa-phone"></i> Contact Us</a></li>
                 </ul>
             </div>
@@ -814,16 +916,16 @@
             <div class="footer-links">
                 <h4>Contact Info</h4>
                 <ul>
-                    <li><i class="fas fa-map-marker-alt"></i> Main Street, Galewela</li>
-                    <li><i class="fas fa-phone"></i> +94 25 123 4567</li>
-                    <li><i class="fas fa-envelope"></i> info@galewelaps.lk</li>
-                    <li><i class="fas fa-clock"></i> Mon-Fri: 8:30 AM - 4:30 PM</li>
+                    <li><i class="fas fa-map-marker-alt"></i>Pradeshiya Sabha, Galewela</li>
+                    <li><i class="fas fa-phone"></i> +94 70 221 2806</li>
+                    <li><i class="fas fa-envelope"></i> galewelapradeshiyasabha@gmail.com</li>
+                    <li><i class="fas fa-clock"></i> Mon-Fri: 8:30 AM - 5:00 PM</li>
                 </ul>
             </div>
         </div>
         
         <div class="copyright">
-            <p>&copy; 2023 Galewela Pradeshiya Sabha. All Rights Reserved. | Developed by Enp Media Unit</p>
+            <p>&copy; 2023 Galewela Pradeshiya Sabha. All Rights Reserved. | Developed by Enp Media Unit ❤️</p>
         </div>
         
         

@@ -10,7 +10,7 @@
 <div align="center">
   <img src="https://github.com/madumax2006-byte/gps1/blob/main/ps.png" alt="Your Profile Picture" width="300" height="300">
      <p align="center">
-<a href="zx" target="blank"><img align="center" src="https://github.com/madumax2006-byte/gps1/blob/main/pu-removebg-preview.png" alt="Deploy bot" height="112" width="310" /></a>
+<a href="https://galewela-p-s.vercel.app/" target="blank"><img align="center" src="https://github.com/madumax2006-byte/gps1/blob/main/pu-removebg-preview.png" alt="Deploy bot" height="112" width="310" /></a>
 <img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif">
 
 
